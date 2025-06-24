@@ -41,7 +41,12 @@ namespace SeleniumDemo2025.Shared
                 case Browser.Chrome:
                     var chromeOptions = new ChromeOptions();
                     //var service = ChromeDriverService.CreateDefaultService(DriverPath);
-                    chromeOptions.AddArgument("--start-maximized");
+                    //chromeOptions.AddArgument("--start-maximized");
+                    chromeOptions.AddArgument("--headless=new");
+
+                     string tempProfileDir = Path.Combine(Path.GetTempPath(), Path.GetRandomFileName());
+                    chromeOptions.AddArgument($"--user-data-dir={tempProfileDir}");
+                    chromeOptions.AddArgument("--no-sandbox");
 
                     // these 2 lines are needed for Lighthouse to use the existing browser window (otherwise opens it's own). Can comment these out if Lighthouse isn't going to be used.
                     //chromeOptions.AddArgument("--remote-debugging-address=0.0.0.0");
