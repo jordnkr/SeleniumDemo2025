@@ -23,7 +23,7 @@ namespace SeleniumDemo2025.TestableUI.Pages
             switch (testEnvironment)
             {
                 case TestEnvironment.PROD:
-                    Driver.Navigate().GoToUrl("http://127.0.0.1:5500/");
+                    Driver.Navigate().GoToUrl("http://localhost:8080");
                     break;
                 default:
                     throw new Exception("error getting environment");
