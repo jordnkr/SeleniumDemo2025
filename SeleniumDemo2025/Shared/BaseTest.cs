@@ -14,7 +14,7 @@ namespace SeleniumDemo2025.Shared
 
 #pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
     protected BaseTest()
-#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
+#pragma warning restore CS8618
     { }
 
         [TestInitialize]
@@ -44,8 +44,8 @@ namespace SeleniumDemo2025.Shared
                     chromeOptions.AddArgument("--start-maximized");
 
                     // these 2 lines are needed for Lighthouse to use the existing browser window (otherwise opens it's own). Can comment these out if Lighthouse isn't going to be used.
-                    chromeOptions.AddArgument("--remote-debugging-address=0.0.0.0");
-                    chromeOptions.AddArgument($"--remote-debugging-port=4444");
+                    //chromeOptions.AddArgument("--remote-debugging-address=0.0.0.0");
+                    //chromeOptions.AddArgument($"--remote-debugging-port=4444");
 
                     Driver = new ChromeDriver(chromeOptions);
                     break;

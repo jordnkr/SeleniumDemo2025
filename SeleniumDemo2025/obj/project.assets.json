@@ -1956,11 +1956,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "s:\\gitHubRepos\\SeleniumDemo2025\\SeleniumDemo2025\\SeleniumDemo2025.csproj",
+      "projectUniqueName": "S:\\gitHubRepos\\SeleniumDemo2025\\SeleniumDemo2025\\SeleniumDemo2025.csproj",
       "projectName": "SeleniumDemo2025",
-      "projectPath": "s:\\gitHubRepos\\SeleniumDemo2025\\SeleniumDemo2025\\SeleniumDemo2025.csproj",
+      "projectPath": "S:\\gitHubRepos\\SeleniumDemo2025\\SeleniumDemo2025\\SeleniumDemo2025.csproj",
       "packagesPath": "C:\\Users\\Tinker.000\\.nuget\\packages\\",
-      "outputPath": "s:\\gitHubRepos\\SeleniumDemo2025\\SeleniumDemo2025\\obj\\",
+      "outputPath": "S:\\gitHubRepos\\SeleniumDemo2025\\SeleniumDemo2025\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Tinker.000\\AppData\\Roaming\\NuGet\\NuGet.Config"
